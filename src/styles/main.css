@@ -85,6 +85,10 @@ header .column input{
     background: linear-gradient(#f8eddf 96%, #fdf5ea 4%);
 }
 
+.piano-keys .white:active{
+    box-shadow: inset -5px 5px 20px #979797;
+}
+
 .piano-keys .black{
     width: 44px;
     height: 140px;
@@ -92,6 +96,10 @@ header .column input{
     margin: 0 -22px 0 -22px;
     border-radius: 0 0 5px 5px;
     background: linear-gradient(#333, #000);
+}
+
+.piano-keys .black:active{
+    box-shadow: inset -5px 5px 20px #363636;
 }
 
 .piano-keys span{
