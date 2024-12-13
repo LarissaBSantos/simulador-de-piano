@@ -68,6 +68,8 @@ header .column input{
 .piano-keys {
     display: flex;
     margin-top: 40px;
+    padding-left: inherit;
+    justify-items: center;
     text-transform: uppercase;
     list-style: none;
     user-select: none;
@@ -85,7 +87,7 @@ header .column input{
     background: linear-gradient(#f8eddf 96%, #fdf5ea 4%);
 }
 
-.piano-keys .white:active{
+.piano-keys .white.active{
     box-shadow: inset -5px 5px 20px #979797;
 }
 
@@ -98,7 +100,7 @@ header .column input{
     background: linear-gradient(#333, #000);
 }
 
-.piano-keys .black:active{
+.piano-keys .black.active{
     box-shadow: inset -5px 5px 20px #363636;
 }
 
@@ -110,4 +112,8 @@ header .column input{
     color: #979797;
     font-size: 1.13rem;
     position: absolute;
+}
+
+.piano-keys.hide span{
+    display: none;
 }
